@@ -17,7 +17,7 @@ function Activity(props) {
   return (
     <div className='flex flex-col gap-3'>
         <h2 className='text-2xl font-medium'>Manage Activities</h2>
-        <div className='flex'>
+        <div className='flex flex-col md:flex md:flex-row '>
             <input value={newitem} onChange={changeitem} placeholder='Next Activity?'className='border border-black p-1'></input>
             <button className='bg-black text-white p-1 border border-black' onClick={additem}>Add</button>
         </div>
